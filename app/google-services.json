@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "959663944218",
+    "project_id": "dairy-project-b3bb2",
+    "storage_bucket": "dairy-project-b3bb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959663944218:android:26c250d363860c45bc17a3",
+        "android_client_info": {
+          "package_name": "com.example.dairyproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_UUMlY3DxW5adZT7qfX0FJmpJRfsg0nc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
