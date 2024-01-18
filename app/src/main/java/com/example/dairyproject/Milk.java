@@ -4,7 +4,7 @@ public class Milk {
 
     String milkDay_id;
     String milking_Date;
-    String Morning_Total;
+    String morning_Total;
     String afternoon_Total;
     String evening_Total;
     String milk_Total;
@@ -17,7 +17,7 @@ public class Milk {
     public Milk(String milkDay_id, String milking_Date, String morning_Total, String afternoon_Total, String evening_Total, String milk_Total, String milk_Notes) {
         this.milkDay_id = milkDay_id;
         this.milking_Date = milking_Date;
-        Morning_Total = morning_Total;
+        this.morning_Total = morning_Total;
         this.afternoon_Total = afternoon_Total;
         this.evening_Total = evening_Total;
         this.milk_Total = milk_Total;
@@ -33,7 +33,7 @@ public class Milk {
     }
 
     public String getMorning_Total() {
-        return Morning_Total;
+        return morning_Total;
     }
 
     public String getAfternoon_Total() {
