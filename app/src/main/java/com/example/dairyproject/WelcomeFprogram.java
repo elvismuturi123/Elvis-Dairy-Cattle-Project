@@ -18,7 +18,7 @@ public class WelcomeFprogram extends AppCompatActivity {
 
         navToFprogram = findViewById(R.id.welFeed_button);
 
-        navToFprogram.setOnClickListener(v -> Toolbox.navigateTo(WelcomeFprogram.this, AddFeedingProgram.class));
+        navToFprogram.setOnClickListener(v -> Toolbox.navigateTo(WelcomeFprogram.this, View_Feed_Program.class));
 
 
 
