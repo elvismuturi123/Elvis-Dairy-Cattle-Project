@@ -1,28 +1,31 @@
 package com.example.dairyproject;
 
 public class Feed {
-    String MilkProduced;
-    String CattleNumber;
+
+    String feedDayId;
     String FeedingDtae;
     String FeedTpe;
     String Components;
+
+    String MilkProduced;
+    String CattleNumber;
     String ProgramNotes;
 
-    public Feed(String milkProduced, String cattleNumber, String feedingDtae, String feedTpe, String components, String programNotes) {
-        MilkProduced = milkProduced;
-        CattleNumber = cattleNumber;
+    public Feed() {
+    }
+
+    public Feed(String feedDayId, String feedingDtae, String feedTpe, String components, String milkProduced, String cattleNumber, String programNotes) {
+        this.feedDayId = feedDayId;
         FeedingDtae = feedingDtae;
         FeedTpe = feedTpe;
         Components = components;
+        MilkProduced = milkProduced;
+        CattleNumber = cattleNumber;
         ProgramNotes = programNotes;
     }
 
-    public String getMilkProduced() {
-        return MilkProduced;
-    }
-
-    public String getCattleNumber() {
-        return CattleNumber;
+    public String getFeedDayId() {
+        return feedDayId;
     }
 
     public String getFeedingDtae() {
@@ -35,6 +38,14 @@ public class Feed {
 
     public String getComponents() {
         return Components;
+    }
+
+    public String getMilkProduced() {
+        return MilkProduced;
+    }
+
+    public String getCattleNumber() {
+        return CattleNumber;
     }
 
     public String getProgramNotes() {

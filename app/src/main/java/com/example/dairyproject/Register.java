@@ -125,8 +125,7 @@ public class Register extends AppCompatActivity {
 
                                     if(task.isSuccessful()){
                                         Toolbox.showToast(Register.getContext(), "User Details saved successfully");
-
-                                        Toolbox.navigateTo(Register.getContext(), Login.class);
+                                        Toolbox.navigateTo(Register.this, Login.class);
                                     }else {
                                         Toolbox.showToast(Register.getContext(), task.getException().getLocalizedMessage());
                                     }

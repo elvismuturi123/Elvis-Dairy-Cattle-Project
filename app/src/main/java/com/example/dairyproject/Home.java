@@ -21,7 +21,7 @@ CardView myHomeCardview = findViewById(R.id.home_card);
 
 
 
-        myCattleCardview.setOnClickListener(v -> Toolbox.navigateTo(Home.this, Display_cattle.class));
+        myCattleCardview.setOnClickListener(v -> Toolbox.navigateTo(Home.this, HomeTocRecs.class));
         myMilkCardview.setOnClickListener(v -> Toolbox.navigateTo(Home.this, Display_milk.class));
         myControlCardview.setOnClickListener(v -> Toolbox.navigateTo(Home.this, ControlActivity.class));
         myfProgramCardview.setOnClickListener(v -> Toolbox.navigateTo(Home.this, WelcomeFprogram.class));

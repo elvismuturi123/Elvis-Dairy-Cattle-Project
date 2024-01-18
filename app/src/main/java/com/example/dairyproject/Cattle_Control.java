@@ -23,9 +23,6 @@ public class Cattle_Control extends AppCompatActivity {
     CardView myLearnCardView;
 
 
-
-
-
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,22 +32,17 @@ public class Cattle_Control extends AppCompatActivity {
         myEventsCardView = findViewById(R.id.events_card_id);
         myViewCardView = findViewById(R.id.view_card_id);
         myLearnCardView = findViewById(R.id.learn_card_id);
-
-
-myEventsCardView.setOnClickListener(v -> Toolbox.navigateTo(Cattle_Control.this, AddEvents.class));
-myViewCardView.setOnClickListener(v -> Toolbox.navigateTo(Cattle_Control.this, ViewEventsActivity.class));
-
-
-
-
+        myEventsCardView.setOnClickListener(v -> Toolbox.navigateTo(Cattle_Control.this, AddEvents.class));
+        myViewCardView.setOnClickListener(v -> Toolbox.navigateTo(Cattle_Control.this, ViewEventsActivity.class));
 
     }
+}
 
-    private void openActivity(Class<?> activityClass) {
-        startActivity(new Intent(this, activityClass));
-    }
+//    private void openActivity(Class<?> activityClass) {
+//        startActivity(new Intent(this, activityClass));
+//    }
 
     // Override onOptionsItemSelected to handle options menu item clicks
 
-    }
+
 

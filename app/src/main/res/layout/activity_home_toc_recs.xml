@@ -15,13 +15,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="feeding program"
+        android:text="precision dairy farming"
+        android:textColor="@color/Dorminant_1"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:layout_marginTop="130dp"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:id="@+id/title_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Discover the essence of"
         android:textColor="@color/Dorminant_1"
         android:textAllCaps="true"
         android:fontFamily="@font/montserrat"
         android:textStyle="bold"
         android:layout_marginTop="50dp"
-        android:textSize="30sp"
+        android:textSize="26sp"
 
         />
 
@@ -29,15 +42,19 @@
         android:layout_width="match_parent"
         android:layout_height="550sp"
         android:paddingTop="90dp"
-        android:src="@drawable/feed"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginBottom="190dp"
+        android:layout_below="@+id/title_view"
+        android:src="@drawable/navhometocrecs"
+        tools:ignore="MissingConstraints"
+
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Feeding program"
+        android:text="Explore"
         android:layout_marginTop="530sp"
-        android:id="@+id/welFeed_button"
+        android:id="@+id/navHomeTocRec_button"
         android:textAllCaps="false"
         android:shadowColor="@color/dblue"
         android:backgroundTint="@color/Dorminant_1"

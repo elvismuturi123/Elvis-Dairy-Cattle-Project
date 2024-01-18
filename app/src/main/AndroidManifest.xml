@@ -15,6 +15,18 @@
         android:theme="@style/Theme.DairyProject"
         tools:targetApi="31">
         <activity
+            android:name=".ViewAllTheEventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View_all_milk_details"
+            android:exported="false" />
+        <activity
+            android:name=".HomeTocRecs"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAllCattleDetails"
+            android:exported="false" />
+        <activity
             android:name=".Home_Reports"
             android:exported="false" />
         <activity

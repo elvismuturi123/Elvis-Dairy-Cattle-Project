@@ -1,61 +1,66 @@
 package com.example.dairyproject;
 
+
+
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dairyproject.Cows;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class CattleAdapter extends RecyclerView.Adapter<CattleAdapter.CattleViewHolder> {
+public class CattleAdapter extends RecyclerView.Adapter<CattleAdapter.MyViewHolder> {
 
-    private List<Cows> cattleList;
-
-    // Constructor to receive the list of cattle
-    public CattleAdapter(List<Cows> cattleList) {
-        this.cattleList = cattleList;
+    Context context;
+    ArrayList <Cows> retrievedCowsArraylist;
+    public CattleAdapter(Context context, ArrayList retrievedCowsArraylist) {
+        this.context = context;
+        this.retrievedCowsArraylist = retrievedCowsArraylist;
     }
-
     @NonNull
     @Override
-    public CattleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // Inflate the layout for each item in the RecyclerView
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cattle_item_layout, parent, false); // Replace with your item layout
-        return new CattleViewHolder(view);
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_displaycattle, parent, false);
+        return new MyViewHolder(v);
     }
-
     @Override
-    public void onBindViewHolder(@NonNull CattleViewHolder holder, int position) {
-        // Get the cow object at the current position
-        Cows cow = cattleList.get(position);
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+     Cows cows =retrievedCowsArraylist.get(position);
+     holder.Cowname.setText(cows.getCattle_Name());
+     holder.Cowtag.setText(cows.getTagNo());
+     holder.Cattlebreed.setText(cows.getCow_Breed());
+     String cow_id = cows.getCow_id();
 
-        // Bind data to the views in the ViewHolder
-        holder.cattleNameTextView.setText(cow.getCattle_Name()); // Update with relevant fields
-        // Set other fields like breed, weight, etc.
+     holder.itemView.setOnClickListener(v -> {
+
+         Intent intent = new Intent(context, ViewAllCattleDetails.class);
+         intent.putExtra("COW_ID", cow_id);
+         context.startActivity(intent);
+     });
     }
-
     @Override
     public int getItemCount() {
-        // Return the total number of items in the list
-        return cattleList.size();
+        return retrievedCowsArraylist == null ? 0 : retrievedCowsArraylist.size();
     }
+    public  static  class  MyViewHolder extends RecyclerView.ViewHolder{
 
-    // ViewHolder class to hold the views for each item
-    public class CattleViewHolder extends RecyclerView.ViewHolder {
+        TextView Cowname,Cowtag,Cattlebreed;
 
-        TextView cattleNameTextView; // Add other views as needed
-
-        public CattleViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            // Find the views in the item layout
-            cattleNameTextView = itemView.findViewById(R.id.cname); // Update with IDs from your layout
-            // Find other views
+            Cowname =itemView.findViewById(R.id.disp_cowName);
+            Cowtag =itemView.findViewById(R.id.disp_cowTagNo);
+            Cattlebreed =itemView.findViewById(R.id.disp_cowBreed);
         }
     }
 }
