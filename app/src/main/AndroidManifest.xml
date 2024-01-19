@@ -15,6 +15,9 @@
         android:theme="@style/Theme.DairyProject"
         tools:targetApi="31">
         <activity
+            android:name=".ProductionReport"
+            android:exported="false" />
+        <activity
             android:name=".ViewAllFeedingProgramDetails"
             android:exported="false" />
         <activity
