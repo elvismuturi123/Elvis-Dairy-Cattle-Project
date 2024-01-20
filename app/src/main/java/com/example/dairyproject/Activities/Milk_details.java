@@ -3,6 +3,7 @@ package com.example.dairyproject.Activities;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.DatePickerDialog;
 import android.graphics.Color;
@@ -45,11 +46,12 @@ public class Milk_details extends AppCompatActivity {
     EditText total_cMilk;
     EditText milk_cNotes;
     Button save_Records;
+    AppCompatButton edit_Records;
+    AppCompatButton delete_Records;
 DatabaseReference milkDbRef;
 
 private Spinner cattleselectSpinner;
 private String selectedCattleId;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +66,10 @@ private String selectedCattleId;
     milk_cNotes = findViewById(R.id.Milk_notes_id);
     save_Records = findViewById(R.id.save_mButton);
     cattleselectSpinner = findViewById(R.id.cattleSelectSpinner);
+    delete_Records = findViewById(R.id.delete_Button);
+    edit_Records = findViewById(R.id.edit_mButton);
+
+
     milkDbRef = FirebaseDatabase.getInstance().getReference().child("Milk_Details");
 
         fetchCattleData();
@@ -91,7 +97,6 @@ private String selectedCattleId;
                     eveningValue = Double.parseDouble(evening_cTotal.getText().toString());
 
                 } catch (NumberFormatException e){
-                    Toolbox.showToast(Milk_details.this, "Invalid Input");
                     //  To handle invalid input if needed
                 }
                 double totalMilk = morningValue + afternoonValue + eveningValue;
@@ -133,6 +138,7 @@ new_milk_record.setValue(new_milkRec, new DatabaseReference.CompletionListener()
     }
 });
     });
+
 
 // Date picker dialog -------
         Calendar calendar = Calendar.getInstance();

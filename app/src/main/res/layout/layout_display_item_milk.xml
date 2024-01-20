@@ -23,7 +23,6 @@
             android:orientation="vertical"
             android:padding="10dp"
             >
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -31,23 +30,40 @@
                 android:gravity="center_horizontal"
                 android:background="@color/Dorminant_1"
                 >
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/dwhite"
-                    android:text="Date"
+                    android:text="Tag Number"
                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/disp_TagNumber"
+                    android:textColor="@color/dwhite"
+                    android:layout_marginStart="10dp"
+                    android:text="  "
+                    />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date :"
+                    />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/disp_milkingDate"
-                    android:textColor="@color/dwhite"
                     android:layout_marginStart="10dp"
                     android:text="  "
                     />
-
             </LinearLayout>
 
             <LinearLayout
@@ -56,37 +72,11 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Morning Total:"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/disp_morningTotal"
-                    android:layout_marginStart="10dp"
-                    android:text="  "
-                    />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                >
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Milk Total:"
                     />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +84,6 @@
                     android:layout_marginStart="10dp"
                     android:text="  "
                     />
-
             </LinearLayout>
 
         </LinearLayout>

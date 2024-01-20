@@ -36,7 +36,7 @@ public class MilkAdapter extends RecyclerView.Adapter<MilkAdapter.MyViewHolder> 
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Milk milk =retrievedMilkArraylist.get(position);
         holder.milkDate.setText(milk.getMilking_Date());
-        holder.milkMorningTotal.setText(milk.getMorning_Total());
+        holder.cowIdentifier.setText(milk.getCattleIdentifier());
         holder.milkAllTotal.setText(milk.getMilk_Total());
         String milkgDayId = milk.getMilkDay_id();
 
@@ -53,12 +53,12 @@ public class MilkAdapter extends RecyclerView.Adapter<MilkAdapter.MyViewHolder> 
     }
     public  static  class  MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView milkDate,milkMorningTotal,milkAllTotal;
+        TextView milkDate,cowIdentifier,milkAllTotal;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             milkDate =itemView.findViewById(R.id.disp_milkingDate);
-            milkMorningTotal =itemView.findViewById(R.id.disp_morningTotal);
+            cowIdentifier =itemView.findViewById(R.id.disp_TagNumber);
             milkAllTotal =itemView.findViewById(R.id.disp_milkTotal);
         }
     }
