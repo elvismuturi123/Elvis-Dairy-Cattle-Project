@@ -9,7 +9,7 @@
     android:background="@color/Dorminant_1"
     android:padding="20dp"
     android:layout_marginBottom="10dp"
-    tools:context=".Register"
+    tools:context=".Activities.Register"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,6 +36,7 @@
             android:id="@+id/date_textview"
             android:text="Select Event Date"
             android:textSize="18sp"
+            android:textAllCaps="true"
             android:textColor="@color/dwhite"
             android:layout_marginTop="15sp"
             />
@@ -45,7 +46,7 @@
             android:layout_marginTop="0sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/dblue"
+            android:textColor="@color/dwhite"
             android:hint="Event Date"
             android:inputType="date" />
 
@@ -85,7 +86,7 @@
             android:hint="Symptoms of the Sickness"
             android:minLines="2"
             android:backgroundTint="@color/dwhite"
-            android:background="@color/dwhite"
+            android:background="@color/dred"
             android:gravity="top"
             android:textSize="20sp"
             android:layout_marginVertical="8dp"
@@ -167,6 +168,7 @@
                 android:minLines="2"
                 android:gravity="top"
                 android:textSize="20sp"
+                android:maxLines="50"
                 android:layout_marginVertical="8dp"
                 android:padding="12dp"
                 android:layout_margin="10dp"

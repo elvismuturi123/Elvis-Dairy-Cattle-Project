@@ -6,18 +6,21 @@ public class Cows {
     String tagNo;
     String cow_Breed;
     String cattle_Weight;
-    String DateOfBirth;
-    String SNotes;
+    String dateOfBirth;
+    String snotes;
+
+
+
     public Cows() {
     }
-    public Cows(String cow_id, String cattle_Name, String tagNo, String cow_Breed, String cattle_Weight, String dateOfBirth, String SNotes) {
+    public Cows(String cow_id, String cattle_Name, String tagNo, String cow_Breed, String cattle_Weight, String dateOfBirth, String snotes) {
         this.cow_id = cow_id;
         this.cattle_Name = cattle_Name;
         this.tagNo = tagNo;
         this.cow_Breed = cow_Breed;
         this.cattle_Weight = cattle_Weight;
-        DateOfBirth = dateOfBirth;
-        this.SNotes = SNotes;
+        this.dateOfBirth = dateOfBirth;
+        this.snotes = snotes;
     }
     public String getCow_id() {
         return cow_id;
@@ -35,10 +38,15 @@ public class Cows {
         return cattle_Weight;
     }
     public String getDateOfBirth() {
-        return DateOfBirth;
+        return dateOfBirth;
     }
     public String getSNotes() {
-        return SNotes;
+        return snotes;
+    }
+
+
+    public String toString() {
+        return getTagNo();
     }
 }
 

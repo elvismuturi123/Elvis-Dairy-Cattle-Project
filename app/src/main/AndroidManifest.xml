@@ -18,80 +18,80 @@
             android:name=".ProductionReport"
             android:exported="false" />
         <activity
-            android:name=".ViewAllFeedingProgramDetails"
+            android:name=".PopulateActivity.ViewAllFeedingProgramDetails"
             android:exported="false" />
         <activity
-            android:name=".ViewAllTheEventsActivity"
+            android:name=".PopulateActivity.ViewAllTheEventsActivity"
             android:exported="false" />
         <activity
-            android:name=".View_all_milk_details"
+            android:name=".PopulateActivity.View_all_milk_details"
             android:exported="false" />
         <activity
-            android:name=".HomeTocRecs"
+            android:name=".Activities.HomeTocRecs"
             android:exported="false" />
         <activity
-            android:name=".ViewAllCattleDetails"
+            android:name=".PopulateActivity.ViewAllCattleDetails"
             android:exported="false" />
         <activity
-            android:name=".Home_Reports"
+            android:name=".Activities.Home_Reports"
             android:exported="false" />
         <activity
-            android:name=".View_Feed_Program"
+            android:name=".Activities.View_Feed_Program"
             android:exported="false" />
         <activity
-            android:name=".Welcome_navToReports"
+            android:name=".Activities.Welcome_navToReports"
             android:exported="false" />
         <activity
-            android:name=".WelcomeFprogram"
+            android:name=".Activities.WelcomeFprogram"
             android:exported="false" />
         <activity
-            android:name=".AddFeedingProgram"
+            android:name=".Activities.AddFeedingProgram"
             android:exported="false" />
         <activity
-            android:name=".ViewEventsActivity"
+            android:name=".Activities.ViewEventsActivity"
             android:exported="false" />
         <activity
-            android:name=".AddEvents"
+            android:name=".Activities.AddEvents"
             android:exported="false" />
         <activity
-            android:name=".NotificationsActivity"
+            android:name=".Activities.NotificationsActivity"
             android:exported="false" />
         <activity
-            android:name=".EventsActivity"
+            android:name=".Activities.EventsActivity"
             android:exported="false" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".Activities.DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".Cattle_Control"
+            android:name=".Activities.Cattle_Control"
             android:exported="false" />
         <activity
-            android:name=".ControlActivity"
+            android:name=".Activities.ControlActivity"
             android:exported="false"
             android:label="@string/title_activity_control" />
         <activity
-            android:name=".TestPage"
+            android:name=".Activities.TestPage"
             android:exported="false" />
         <activity
             android:name=".Display_Test"
             android:exported="false" />
         <activity
-            android:name=".Milk_details"
+            android:name=".Activities.Milk_details"
             android:exported="false" />
         <activity
-            android:name=".Display_milk"
+            android:name=".Activities.Display_milk"
             android:exported="false" />
         <activity
             android:name=".DRecords"
             android:exported="false" />
         <activity
-            android:name=".CRecords"
+            android:name=".Activities.CRecords"
             android:exported="false" />
         <activity
             android:name=".cRecords"
             android:exported="false" />
         <activity
-            android:name=".Display_cattle"
+            android:name=".Activities.Display_cattle"
             android:exported="false" />
         <activity
             android:name=".cattleDetails"
@@ -100,19 +100,19 @@
             android:name=".addCattleDetails"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".Activities.Home"
             android:exported="false" />
         <activity
-            android:name=".Welcome"
+            android:name=".Activities.Welcome"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".Activities.Register"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Activities.Login"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name=".Activities.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -121,7 +121,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:exported="true" />
 
         <meta-data

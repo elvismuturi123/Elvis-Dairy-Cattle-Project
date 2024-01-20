@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Dorminant_1"
-    tools:context=".MainActivity">
+    tools:context=".Activities.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="579dp"
             android:layout_margin="20dp"
             android:orientation="vertical"
             android:padding="20dp">
@@ -43,13 +43,33 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:background="@color/Dorminant_1"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="               Date:" />
+                    android:text="Tag Number  :" />
+
+                <TextView
+                    android:id="@+id/disp_TagNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="  " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date  :" />
 
                 <TextView
                     android:id="@+id/disp_milkingDate"
@@ -57,18 +77,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:text="  " />
+
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Morning Total:" />
+                    android:text="Morning Total  :" />
 
                 <TextView
                     android:id="@+id/disp_morningTotal"
@@ -80,7 +102,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="12dp"
                     android:text="Liters" />
             </LinearLayout>
 
@@ -93,7 +115,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Afternoon Total:" />
+                    android:text="Afternoon Total  :" />
 
                 <TextView
                     android:id="@+id/disp_afternoonTotal"
@@ -105,7 +127,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="12dp"
                     android:text="Liters" />
             </LinearLayout>
 
@@ -118,7 +140,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Evening Total:" />
+                    android:text="Evening Total  :" />
 
                 <TextView
                     android:id="@+id/disp_eveningTotal"
@@ -130,7 +152,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="12dp"
                     android:text="Liters" />
             </LinearLayout>
 
@@ -143,7 +165,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Milk:" />
+                    android:text="Total Milk  :" />
 
                 <TextView
                     android:id="@+id/disp_totalMilk"
@@ -155,7 +177,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="12dp"
                     android:text="Liters" />
 
             </LinearLayout>
@@ -171,9 +193,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:background="@color/Dorminant_1"
+                    android:gravity="center_horizontal"
                     android:text="Notes"
                     android:textAllCaps="true"
-                    android:gravity="center_horizontal"
                     android:textColor="@color/dwhite" />
 
                 <TextView
