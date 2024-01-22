@@ -9,8 +9,6 @@ public class Cows {
     String dateOfBirth;
     String snotes;
 
-
-
     public Cows() {
     }
     public Cows(String cow_id, String cattle_Name, String tagNo, String cow_Breed, String cattle_Weight, String dateOfBirth, String snotes) {
@@ -43,9 +41,7 @@ public class Cows {
     public String getSNotes() {
         return snotes;
     }
-
-
-    public String toString() {
+        public String toString() {
         return getTagNo();
     }
 }
