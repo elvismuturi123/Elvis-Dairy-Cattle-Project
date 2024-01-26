@@ -33,6 +33,8 @@ public class ProductionReport extends AppCompatActivity {
         //add the various tabs
         tabLayout.addTab(tabLayout.newTab().setText("Cattle"));
         tabLayout.addTab(tabLayout.newTab().setText("Milking Time"));
+        // tabLayout.addTab(tabLayout.newTab().setText("Reports"));
+
 
         TabLayoutAdapter adapter= new TabLayoutAdapter(getSupportFragmentManager(),this,tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
@@ -47,7 +49,6 @@ public class ProductionReport extends AppCompatActivity {
             public void onTabUnselected(TabLayout.Tab tab) {
 
             }
-
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 

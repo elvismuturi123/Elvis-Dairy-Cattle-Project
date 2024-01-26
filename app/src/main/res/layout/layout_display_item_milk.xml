@@ -85,6 +85,33 @@
                     android:text="  "
                     />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/updateRecordBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/update_background"
+                        android:elevation="5dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="Update"
+                        android:textColor="@color/dwhite" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            
 
         </LinearLayout>
 

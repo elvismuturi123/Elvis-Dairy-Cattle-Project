@@ -11,14 +11,12 @@
     android:layout_marginBottom="10dp"
     tools:context=".Register"
     >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingTop="30dp"
         >
-
         <TextView
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
@@ -32,31 +30,6 @@
             android:layout_marginBottom="10dp"
             />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="230dp"
-
-            >
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/save_mButton"
-                android:layout_marginTop="0dp"
-                android:layout_gravity="end"
-                android:text="Save"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/montserrat"
-                android:textAllCaps="false"
-                android:background="@drawable/style_custombtn1"
-                />
-
-        </LinearLayout>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,7 +41,7 @@
             android:textStyle="bold"
             />
         <Spinner
-            android:id="@+id/cattleSelectSpinner"
+            android:id="@+id/cattleNameSelectSpinner"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@color/dblue"
@@ -120,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/dblue"
                 android:drawablePadding="5dp"
+                android:text="0"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/montserrat"
                 android:hint="Morning Total in Litres"
@@ -154,6 +128,7 @@
                 android:fontFamily="@font/montserrat"
                 android:hint="Afternoon Total in Liters"
                 android:inputType="text"
+                android:text="0"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:textColor="@color/dblue"
@@ -177,6 +152,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/evening_total"
                 android:layout_width="match_parent"
+                android:text="0"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/dblue"
                 android:drawablePadding="5dp"
@@ -210,6 +186,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/dblue"
                 android:drawablePadding="5dp"
+                android:text="0"
                 android:fontFamily="@font/montserrat"
                 android:hint="Total Milk Produced"
                 android:inputType="text"
@@ -251,29 +228,29 @@
                  >
 
 
-             <androidx.appcompat.widget.AppCompatButton
-                 android:layout_width="80dp"
-                 android:layout_height="wrap_content"
-                 android:id="@+id/edit_mButton"
-                 android:layout_gravity="center_horizontal"
-                 android:layout_marginStart="30dp"
-                 layout_gravity="start"
-                 android:background="@drawable/style_custombtn1"
-                 android:fontFamily="@font/montserrat"
-                 android:text="Edit"
-                 android:textAllCaps="false"
-                 android:textColor="@color/white"
-                 android:textSize="18sp"
-                 android:textStyle="bold" />
+<!--                 <androidx.appcompat.widget.AppCompatButton-->
+<!--                     android:id="@+id/edit_mButton"-->
+<!--                     layout_gravity="start"-->
+<!--                     android:layout_width="80dp"-->
+<!--                     android:layout_height="wrap_content"-->
+<!--                     android:layout_gravity="center_horizontal"-->
+<!--                     android:layout_marginStart="30dp"-->
+<!--                     android:background="@drawable/style_custombtn1"-->
+<!--                     android:fontFamily="@font/montserrat"-->
+<!--                     android:text="Edit"-->
+<!--                     android:textAllCaps="false"-->
+<!--                     android:textColor="@color/white"-->
+<!--                     android:textSize="18sp"-->
+<!--                     android:textStyle="bold" />-->
 
                  <androidx.appcompat.widget.AppCompatButton
                      android:layout_width="80dp"
                      android:layout_height="wrap_content"
-                     android:id="@+id/delete_Button"
-                     android:layout_marginStart="90dp"
+                     android:id="@+id/save_mButton"
+                     android:layout_gravity="end"
                      android:background="@drawable/style_custombtn1"
                      android:fontFamily="@font/montserrat"
-                     android:text="Delete"
+                     android:text="Save"
                      android:textAllCaps="false"
                      android:textColor="@color/white"
                      android:textSize="18sp"

@@ -18,7 +18,7 @@ public class Splash extends AppCompatActivity {
             public void run() {
                 navigateToWelcome();
             }
-        }, 4000);
+        }, 40);
     }
 
     private void navigateToWelcome() {

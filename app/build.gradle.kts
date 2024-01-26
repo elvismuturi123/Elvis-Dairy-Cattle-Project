@@ -33,6 +33,9 @@ android {
 }
 
 dependencies {
+//    implementation("com.android.support:cardview-v7:26.1.0")
+//    implementation("com.android.support:recyclerview-v7:26.1.0")
+//    implementation("com.squareup.picasso:picasso:2.5.2")
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.dairyproject">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,125 +17,103 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DairyProject"
         tools:targetApi="31">
-
+        <activity
+            android:name=".EditMilkDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Production_Reports"
+            android:exported="false" />
         <activity
             android:name=".ViewAllFeedingProgramDetails"
             android:exported="false" />
         <activity
             android:name=".ProductionReport"
             android:exported="true" />
-
-
         <activity
             android:name=".ViewAllTheEventsActivity"
             android:exported="false" />
-
         <activity
             android:name=".View_all_milk_details"
             android:exported="false" />
-
         <activity
             android:name=".HomeTocRecs"
             android:exported="false" />
         <activity
             android:name=".ViewAllCattleDetails"
             android:exported="false" />
-
         <activity
             android:name=".Home_Reports"
             android:exported="false" />
-
         <activity
             android:name=".View_Feed_Program"
             android:exported="false" />
-
         <activity
             android:name=".Welcome_navToReports"
             android:exported="false" />
-
         <activity
             android:name=".WelcomeFprogram"
             android:exported="false" />
-
         <activity
             android:name=".AddFeedingProgram"
             android:exported="false" />
-
         <activity
             android:name=".ViewEventsActivity"
             android:exported="false" />
-
         <activity
             android:name=".AddEvents"
             android:exported="false" />
-
         <activity
             android:name=".NotificationsActivity"
             android:exported="false" />
-
         <activity
             android:name=".EventsActivity"
             android:exported="false" />
-
         <activity
             android:name=".DashboardActivity"
             android:exported="false" />
-
         <activity
             android:name=".Cattle_Control"
             android:exported="false" />
-
         <activity
             android:name=".ControlActivity"
             android:exported="false"
             android:label="@string/title_activity_control" />
-
         <activity
             android:name=".TestPage"
             android:exported="false" />
-
         <activity
             android:name=".Display_cattle"
             android:exported="false" />
-
         <activity
             android:name=".Milk_details"
             android:exported="false" />
-
         <activity
             android:name=".Display_milk"
             android:exported="false" />
-
         <activity
             android:name=".CRecords"
             android:exported="false" />
-
-
         <activity
             android:name=".Home"
             android:exported="false" />
-
         <activity
             android:name=".Welcome"
             android:exported="false" />
-
         <activity
             android:name=".Register"
             android:exported="false" />
-
         <activity
             android:name=".Login"
             android:exported="false" />
-
         <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />

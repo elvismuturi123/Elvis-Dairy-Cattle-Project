@@ -20,7 +20,7 @@ public class TestPage extends AppCompatActivity {
         setContentView(R.layout.activity_test_page);
 
 
-        addNotebtn = findViewById(R.id.add_testbtn);
+       // addNotebtn = findViewById(R.id.add_testbtn);
 
 
 

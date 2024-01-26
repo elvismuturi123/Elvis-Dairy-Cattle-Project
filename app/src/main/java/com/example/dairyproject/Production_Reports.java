@@ -1,9 +1,11 @@
 package com.example.dairyproject;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -27,7 +29,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class MilkingTimeReport extends Fragment {
+public class Production_Reports extends AppCompatActivity {
     PieChart milkPiechart;
 
     ArrayList<PieEntry> ictEntry;
@@ -36,7 +38,7 @@ public class MilkingTimeReport extends Fragment {
     List<Double> eveningProductionList,morningProductionList,afternoonProductionList;
     HashMap<String,Integer> milkingTimeMap;
 
-    @Override
+    //@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

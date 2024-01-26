@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -43,12 +44,12 @@ public class Display_milk extends AppCompatActivity {
 databaseReference.addValueEventListener(new ValueEventListener() {
     @Override
     public void onDataChange(@NonNull DataSnapshot snapshot) {
+        milkArrayList.clear();
 
         for (DataSnapshot dataSnapshot: snapshot.getChildren()){
 
             Milk milk =  dataSnapshot.getValue(Milk.class);
-
-            milkArrayList.add(milk);
+                milkArrayList.add(milk);
         }
         milkAdapter.notifyDataSetChanged();
     }
