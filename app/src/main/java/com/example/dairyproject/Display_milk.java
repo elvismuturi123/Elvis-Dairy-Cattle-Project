@@ -24,7 +24,6 @@ public class Display_milk extends AppCompatActivity {
     ImageButton menuButton;
     ArrayList<Milk> milkArrayList;
     MilkAdapter milkAdapter;
-
     DatabaseReference milkDb = FirebaseDatabase.getInstance().getReference();
     DatabaseReference databaseReference;
 
@@ -63,9 +62,13 @@ databaseReference.addValueEventListener(new ValueEventListener() {
         recyclerViewMilkRec.setAdapter(milkAdapter);
 
         navigate_mRecords.setOnClickListener(v -> Toolbox.navigateTo(Display_milk.this, Milk_details.class));
+
     }
     void setupRecyclerView(){
-
     }
 
+    @Override
+    public void finish() {
+        super.finish();
+    }
 }

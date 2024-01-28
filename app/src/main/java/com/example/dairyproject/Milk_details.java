@@ -47,9 +47,9 @@ public class Milk_details extends AppCompatActivity {
     EditText total_cMilk;
     EditText milk_cNotes;
     Button save_Records;
-DatabaseReference milkDbRef;
- Spinner cattleselectSpinner;
- String selectedCattleId;
+    DatabaseReference milkDbRef;
+    Spinner cattleselectSpinner;
+    String selectedCattleId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -48,7 +48,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
         return retrievedEventArraylist == null ? 0 : retrievedEventArraylist.size();
     }
     public  static  class  MyViewHolder extends RecyclerView.ViewHolder{
-        TextView eventDate,eventType,technicianName;
+        TextView eventDate,eventType,technicianName ;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

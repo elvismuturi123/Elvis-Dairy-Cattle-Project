@@ -46,7 +46,6 @@ public class View_all_milk_details extends AppCompatActivity {
 
          String milkDay_id = getIntent().getStringExtra("milkDay_ID");
         DatabaseReference docRef1 = FirebaseDatabase.getInstance().getReference("Milk_Details").child(milkDay_id);
-
             docRef1.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<DataSnapshot> task) {
@@ -75,6 +74,5 @@ public class View_all_milk_details extends AppCompatActivity {
                     }
                 }
             });
-
     }
 }
