@@ -7,9 +7,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.dairyproject.CattleProductionReport;
-import com.example.dairyproject.MilkingTimeReport;
-
 public class TabLayoutAdapter extends FragmentPagerAdapter {
     Context mContext;
     int num_Tabs;

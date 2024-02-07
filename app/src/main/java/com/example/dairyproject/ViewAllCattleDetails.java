@@ -56,7 +56,7 @@ public class ViewAllCattleDetails extends AppCompatActivity {
                         Breed.setText(retrieved_cow_data.getCow_Breed());
                         Weight.setText(retrieved_cow_data.getCattle_Weight());
                         Birthdate.setText(retrieved_cow_data.getDateOfBirth());
-                        SNotes.setText(retrieved_cow_data.getSNotes());
+//                        SNotes.setText(retrieved_cow_data.get());
                     } else {
                         // Document does not exist
                         Log.d("TAG", "Document not found");

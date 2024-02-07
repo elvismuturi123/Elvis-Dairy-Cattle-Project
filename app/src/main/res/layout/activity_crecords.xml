@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -59,6 +56,25 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textAlignment="center"
+            android:textColor="@color/dwhite"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cowCategorySpinner"
+            android:padding="14dp"
+            android:background="@color/dblue"
+            android:backgroundTint="@color/dblue"
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -87,8 +103,6 @@
                 android:textColorHint="@color/dblue" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -120,11 +134,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
-
-
-
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
@@ -154,17 +163,14 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
-<!--Date picker-->
-       <TextView
+        <!--Date picker-->
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/date_textview"
             android:text="Select Birth Date"
             android:textSize="18sp"
             android:layout_marginTop="15sp"
-
             />
 
         <EditText
@@ -175,55 +181,67 @@
             android:hint="Date of Birth"
             android:inputType="date" />
 
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:layout_marginVertical="26dp"
-    android:backgroundTint="@color/dwhite"
-    android:background="@color/dwhite"
-
-    >
-
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/notes_id"
-            android:hint="Write Short Notes"
-            android:minLines="2"
-            android:gravity="top"
-            android:textSize="20sp"
-            android:layout_marginVertical="8dp"
-            android:padding="12dp"
-            android:layout_margin="10dp"
-            android:textColor="@color/dblue"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginVertical="26dp"
+            android:backgroundTint="@color/dwhite"
+            android:background="@color/dwhite"  >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dwhite"
+                android:text="Additional Information"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:background="@color/dblue"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notes_id"
+                android:hint="Write Short Notes"
+                android:minLines="8"
+                android:gravity="top"
+                android:textSize="20sp"
+                android:layout_marginVertical="8dp"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/dblue"/>
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             >
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Upload Image"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="Choose Image"
                 android:id="@+id/button_uploadImage"
-                android:layout_marginBottom="10dp"
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Description"
-                android:layout_toEndOf="@+id/button_uploadImage"
-                android:layout_marginStart="16dp"
-                android:id="@+id/descriptionImage"
+                android:layout_marginTop="80dp"
                 />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:id="@+id/Image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/dwhite" />
+
+
 
         </RelativeLayout>
 
@@ -238,6 +256,11 @@
             android:backgroundTint="@color/dblue"
             />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -246,7 +269,6 @@
             android:orientation="horizontal">
 
         </LinearLayout>
-
 
     </LinearLayout>
 

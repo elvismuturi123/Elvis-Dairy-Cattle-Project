@@ -11,7 +11,7 @@ import com.example.dairyproject.ProductionReport;
 import com.example.dairyproject.R;
 
 public class Home_Reports extends AppCompatActivity {
-    CardView milkCard;
+    CardView milkCard,cattleCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,11 +19,10 @@ public class Home_Reports extends AppCompatActivity {
 
         milkCard=findViewById(R.id.milk_card);
 
-        milkCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), ProductionReport.class));
-            }
-        });
+        cattleCard=findViewById(R.id.cattle_card);
+        milkCard.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ProductionReport.class)));
+
+        cattleCard.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),CattleReport.class)));
+
     }
 }
